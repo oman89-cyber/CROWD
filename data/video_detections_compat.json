@@ -1,0 +1,31 @@
+{
+  "video": "test_crowd.mp4",
+  "fps": 30.0,
+  "total_frames": 30,
+  "frame_skip": 10,
+  "confidence_threshold": 0.5,
+  "frames_processed": 3,
+  "max_people": 0,
+  "avg_people": 0.0,
+  "processing_time_seconds": 1.55,
+  "frames": [
+    {
+      "frame_number": 0,
+      "timestamp": 0.0,
+      "person_count": 0,
+      "detections": []
+    },
+    {
+      "frame_number": 10,
+      "timestamp": 0.333,
+      "person_count": 0,
+      "detections": []
+    },
+    {
+      "frame_number": 20,
+      "timestamp": 0.667,
+      "person_count": 0,
+      "detections": []
+    }
+  ]
+}

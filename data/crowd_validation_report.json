@@ -1,0 +1,87 @@
+{
+  "model": "hustvl/yolos-tiny",
+  "model_parameters": 6488736,
+  "thresholds_tested": [
+    0.5,
+    0.7
+  ],
+  "images_tested": 5,
+  "average_inference_s": 0.473,
+  "images": [
+    {
+      "image": "crowd_01",
+      "coco_id": "000000005001",
+      "source": "COCO val2017 image 5001 \u2014 verified crowd scene (39 persons @0.3)",
+      "ground_truth_count": "unavailable",
+      "ground_truth_source": "unavailable \u2014 annotation file not downloaded",
+      "detections_threshold_0_5": 32,
+      "detections_threshold_0_7": 21,
+      "count_error_0_5": null,
+      "relative_error_0_5": null,
+      "count_error_0_7": null,
+      "relative_error_0_7": null,
+      "inference_seconds": 0.344,
+      "notes": "Green boxes = detections @0.5. Yellow inner boxes = detections @0.7."
+    },
+    {
+      "image": "crowd_02",
+      "coco_id": "000000014439",
+      "source": "COCO val2017 image 14439 \u2014 verified crowd scene (36 persons @0.3)",
+      "ground_truth_count": "unavailable",
+      "ground_truth_source": "unavailable \u2014 annotation file not downloaded",
+      "detections_threshold_0_5": 29,
+      "detections_threshold_0_7": 22,
+      "count_error_0_5": null,
+      "relative_error_0_5": null,
+      "count_error_0_7": null,
+      "relative_error_0_7": null,
+      "inference_seconds": 0.543,
+      "notes": "Green boxes = detections @0.5. Yellow inner boxes = detections @0.7."
+    },
+    {
+      "image": "crowd_03",
+      "coco_id": "000000019109",
+      "source": "COCO val2017 image 19109 \u2014 verified crowd scene (32 persons @0.3)",
+      "ground_truth_count": "unavailable",
+      "ground_truth_source": "unavailable \u2014 annotation file not downloaded",
+      "detections_threshold_0_5": 21,
+      "detections_threshold_0_7": 14,
+      "count_error_0_5": null,
+      "relative_error_0_5": null,
+      "count_error_0_7": null,
+      "relative_error_0_7": null,
+      "inference_seconds": 0.406,
+      "notes": "Green boxes = detections @0.5. Yellow inner boxes = detections @0.7."
+    },
+    {
+      "image": "crowd_04",
+      "coco_id": "000000024021",
+      "source": "COCO val2017 image 24021 \u2014 verified crowd scene (31 persons @0.3)",
+      "ground_truth_count": "unavailable",
+      "ground_truth_source": "unavailable \u2014 annotation file not downloaded",
+      "detections_threshold_0_5": 27,
+      "detections_threshold_0_7": 21,
+      "count_error_0_5": null,
+      "relative_error_0_5": null,
+      "count_error_0_7": null,
+      "relative_error_0_7": null,
+      "inference_seconds": 0.635,
+      "notes": "Green boxes = detections @0.5. Yellow inner boxes = detections @0.7."
+    },
+    {
+      "image": "crowd_05",
+      "coco_id": "000000004134",
+      "source": "COCO val2017 image 4134 \u2014 verified crowd scene (29 persons @0.3)",
+      "ground_truth_count": "unavailable",
+      "ground_truth_source": "unavailable \u2014 annotation file not downloaded",
+      "detections_threshold_0_5": 19,
+      "detections_threshold_0_7": 14,
+      "count_error_0_5": null,
+      "relative_error_0_5": null,
+      "count_error_0_7": null,
+      "relative_error_0_7": null,
+      "inference_seconds": 0.437,
+      "notes": "Green boxes = detections @0.5. Yellow inner boxes = detections @0.7."
+    }
+  ]
+}

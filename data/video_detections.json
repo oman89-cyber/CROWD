@@ -1,0 +1,72 @@
+{
+  "video": "test_crowd_real.mp4",
+  "fps": 10.0,
+  "total_frames": 10,
+  "frame_skip": 5,
+  "confidence_threshold": 0.5,
+  "frames_processed": 2,
+  "max_people": 3,
+  "avg_people": 2.5,
+  "processing_time_seconds": 1.88,
+  "frames": [
+    {
+      "frame_number": 0,
+      "timestamp": 0.0,
+      "person_count": 2,
+      "detections": [
+        {
+          "confidence": 0.9974,
+          "box": [
+            387.0,
+            67.9,
+            501.0,
+            349.4
+          ]
+        },
+        {
+          "confidence": 0.786,
+          "box": [
+            0.2,
+            270.7,
+            55.2,
+            302.7
+          ]
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "timestamp": 0.5,
+      "person_count": 3,
+      "detections": [
+        {
+          "confidence": 0.9981,
+          "box": [
+            387.6,
+            67.8,
+            503.1,
+            348.9
+          ]
+        },
+        {
+          "confidence": 0.793,
+          "box": [
+            0.1,
+            269.2,
+            55.1,
+            302.6
+          ]
+        },
+        {
+          "confidence": 0.6842,
+          "box": [
+            343.9,
+            95.4,
+            438.7,
+            339.5
+          ]
+        }
+      ]
+    }
+  ]
+}

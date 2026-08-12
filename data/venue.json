@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {"id": "P1", "type": "parking", "name": "Parking Lot P1"},
+    {"id": "P2", "type": "parking", "name": "Parking Lot P2"},
+    {"id": "P3", "type": "parking", "name": "Parking Lot P3"},
+    {"id": "P4", "type": "parking", "name": "Parking Lot P4"},
+
+    {"id": "GATE_A", "type": "gate", "name": "Gate A"},
+    {"id": "GATE_B", "type": "gate", "name": "Gate B"},
+    {"id": "GATE_C", "type": "gate", "name": "Gate C"},
+    {"id": "GATE_D", "type": "gate", "name": "Gate D"},
+
+    {"id": "SECURITY_A", "type": "security", "name": "Security Checkpoint A"},
+    {"id": "SECURITY_B", "type": "security", "name": "Security Checkpoint B"},
+    {"id": "SECURITY_C", "type": "security", "name": "Security Checkpoint C"},
+    {"id": "SECURITY_D", "type": "security", "name": "Security Checkpoint D"},
+
+    {"id": "CORRIDOR_A", "type": "corridor", "name": "Corridor A"},
+    {"id": "CORRIDOR_B", "type": "corridor", "name": "Corridor B"},
+    {"id": "CORRIDOR_C", "type": "corridor", "name": "Corridor C"},
+    {"id": "CORRIDOR_D", "type": "corridor", "name": "Corridor D"},
+
+    {"id": "BLOCK_A", "type": "block", "name": "Seating Block A"},
+    {"id": "BLOCK_B", "type": "block", "name": "Seating Block B"},
+    {"id": "BLOCK_C", "type": "block", "name": "Seating Block C"},
+    {"id": "BLOCK_D", "type": "block", "name": "Seating Block D"},
+
+    {"id": "SEAT_C124", "type": "seat", "name": "Seat C124"},
+
+    {"id": "FOOD_A", "type": "food", "name": "Food Court A"},
+    {"id": "FOOD_B", "type": "food", "name": "Food Court B"},
+
+    {"id": "WASHROOM_A", "type": "washroom", "name": "Washroom A"},
+    {"id": "WASHROOM_B", "type": "washroom", "name": "Washroom B"},
+    {"id": "WASHROOM_C", "type": "washroom", "name": "Washroom C"},
+    {"id": "WASHROOM_D", "type": "washroom", "name": "Washroom D"},
+
+    {"id": "EXIT_A", "type": "exit", "name": "Exit A"},
+    {"id": "EXIT_B", "type": "exit", "name": "Exit B"}
+  ],
+
+  "edges": [
+    {"from": "P1", "to": "GATE_A", "distance": 120, "capacity": 500},
+    {"from": "P2", "to": "GATE_B", "distance": 130, "capacity": 500},
+    {"from": "P3", "to": "GATE_C", "distance": 110, "capacity": 500},
+    {"from": "P4", "to": "GATE_D", "distance": 125, "capacity": 500},
+
+    {"from": "GATE_A", "to": "SECURITY_A", "distance": 30, "capacity": 300},
+    {"from": "GATE_B", "to": "SECURITY_B", "distance": 30, "capacity": 300},
+    {"from": "GATE_C", "to": "SECURITY_C", "distance": 25, "capacity": 300},
+    {"from": "GATE_D", "to": "SECURITY_D", "distance": 35, "capacity": 300},
+
+    {"from": "SECURITY_A", "to": "CORRIDOR_A", "distance": 40, "capacity": 400},
+    {"from": "SECURITY_B", "to": "CORRIDOR_B", "distance": 45, "capacity": 400},
+    {"from": "SECURITY_C", "to": "CORRIDOR_C", "distance": 35, "capacity": 400},
+    {"from": "SECURITY_D", "to": "CORRIDOR_D", "distance": 40, "capacity": 400},
+
+    {"from": "CORRIDOR_A", "to": "BLOCK_A", "distance": 50, "capacity": 600},
+    {"from": "CORRIDOR_B", "to": "BLOCK_B", "distance": 55, "capacity": 600},
+    {"from": "CORRIDOR_C", "to": "BLOCK_C", "distance": 45, "capacity": 600},
+    {"from": "CORRIDOR_D", "to": "BLOCK_D", "distance": 50, "capacity": 600},
+
+    {"from": "BLOCK_C", "to": "SEAT_C124", "distance": 15, "capacity": 200},
+
+    {"from": "CORRIDOR_A", "to": "CORRIDOR_B", "distance": 80, "capacity": 400},
+    {"from": "CORRIDOR_B", "to": "CORRIDOR_C", "distance": 85, "capacity": 400},
+    {"from": "CORRIDOR_C", "to": "CORRIDOR_D", "distance": 80, "capacity": 400},
+    {"from": "CORRIDOR_D", "to": "CORRIDOR_A", "distance": 90, "capacity": 400},
+
+    {"from": "CORRIDOR_A", "to": "FOOD_A", "distance": 25, "capacity": 200},
+    {"from": "CORRIDOR_C", "to": "FOOD_B", "distance": 30, "capacity": 200},
+
+    {"from": "CORRIDOR_A", "to": "WASHROOM_A", "distance": 20, "capacity": 150},
+    {"from": "CORRIDOR_B", "to": "WASHROOM_B", "distance": 20, "capacity": 150},
+    {"from": "CORRIDOR_C", "to": "WASHROOM_C", "distance": 20, "capacity": 150},
+    {"from": "CORRIDOR_D", "to": "WASHROOM_D", "distance": 20, "capacity": 150},
+
+    {"from": "CORRIDOR_A", "to": "EXIT_A", "distance": 60, "capacity": 500},
+    {"from": "CORRIDOR_C", "to": "EXIT_B", "distance": 55, "capacity": 500},
+
+    {"from": "GATE_A", "to": "GATE_B", "distance": 150, "capacity": 300},
+    {"from": "GATE_B", "to": "GATE_C", "distance": 160, "capacity": 300},
+    {"from": "GATE_C", "to": "GATE_D", "distance": 150, "capacity": 300},
+    {"from": "GATE_D", "to": "GATE_A", "distance": 170, "capacity": 300}
+  ]
+}
